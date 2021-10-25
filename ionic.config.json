@@ -1,0 +1,7 @@
+{
+  "name": "poc-barcode",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
