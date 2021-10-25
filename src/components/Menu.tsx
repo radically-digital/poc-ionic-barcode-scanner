@@ -12,19 +12,11 @@ import {
 
 import { useLocation } from "react-router-dom";
 import {
-  archiveOutline,
-  archiveSharp,
   bookmarkOutline,
-  heartOutline,
-  heartSharp,
   mailOutline,
   mailSharp,
-  paperPlaneOutline,
-  paperPlaneSharp,
-  trashOutline,
-  trashSharp,
-  warningOutline,
-  warningSharp,
+  barcodeOutline,
+  barcodeSharp,
 } from "ionicons/icons";
 import "./Menu.css";
 
@@ -43,38 +35,14 @@ const appPages: AppPage[] = [
     mdIcon: mailSharp,
   },
   {
-    title: "Outbox",
-    url: "/page/Outbox",
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp,
-  },
-  {
-    title: "Favorites",
-    url: "/page/Favorites",
-    iosIcon: heartOutline,
-    mdIcon: heartSharp,
-  },
-  {
-    title: "Archived",
-    url: "/page/Archived",
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp,
-  },
-  {
-    title: "Trash",
-    url: "/page/Trash",
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
-  },
-  {
-    title: "Spam",
-    url: "/page/Spam",
-    iosIcon: warningOutline,
-    mdIcon: warningSharp,
+    title: "Barcode",
+    url: "/barcode",
+    iosIcon: barcodeOutline,
+    mdIcon: barcodeSharp,
   },
 ];
 
-const labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
+const labels = ["Notes", "Reminders"];
 
 const Menu: React.FC = () => {
   const location = useLocation();
