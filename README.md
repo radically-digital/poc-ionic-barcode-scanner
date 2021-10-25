@@ -16,7 +16,7 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin add java https://github.com/halcyon/asdf-java.git
 if [[ `sysctl -n machdep.cpu.brand_string` == 'Apple M1' ]]; then
     # Mac M1's different arch workaround.
-  JAVA_VERSION=$(perl -lne 'print $1 if /^java ([0-9.]*)$/im' .tool-versions)
+  JAVA_VERSION=$(perl -lne 'print $1 if /^java (.*)$/im' .tool-versions)
   arch -x86_64 asdf install java $JAVA_VERSION
 fi
 asdf install
