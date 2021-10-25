@@ -43,17 +43,6 @@ npm run build:android && npm run open:ios
 npm run build:ios && npm run open:android
 ```
 
-## Issues
+## Notes
 
-### Android dependencies
-
-Developing on a Mac with an M-1 chip? Here be some troubleshooting:
-
-- You need to download a compatible emulator within Android Studio > AVD Manager > Other Images > any compatible arm64-v8a build
-- If the emulator fails to launch then try the steps outlined in the solution here:
-  - https://stackoverflow.com/questions/67230200/emulator-appearing-offline-on-m1-mac-after-the-last-update-of-arm64-v8a
-- If you get the following warning when running `npm run android`:
-  - `> Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation. `
-  - Try the following solution: https://stackoverflow.com/questions/64968851/could-not-find-tools-jar-please-check-that-library-internet-plug-ins-javaapple
-
-<!-- @ericblade/quagga2 -->
+- For barcode in the web/PWA - look into [@ericblade/quagga2](https://www.npmjs.com/package/@ericblade/quagga2)
